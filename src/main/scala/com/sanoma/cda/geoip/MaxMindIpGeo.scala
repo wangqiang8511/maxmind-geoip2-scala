@@ -35,7 +35,7 @@ import java.net.InetAddress
  * @param dbFile The DB file unzipped
  * @param lruCache The Size of the LRU cache
  */
-class MaxMindIpGeo(dbFile: File, lruCache: Int = 10000, synchronized: Boolean = false, geoPointBlacklist: Set[Point] = Set()) extends Serializable {
+class MaxMindIpGeo(dbFile: File, lruCache: Int = 10000, synchronized: Boolean = false, geoPointBlacklist: Set[Point] = Set()) {
 
   /**
    * Helper function that turns string into InetAddress

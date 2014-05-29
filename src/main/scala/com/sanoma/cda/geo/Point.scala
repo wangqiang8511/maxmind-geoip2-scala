@@ -27,7 +27,7 @@ object Point {
  * @param latitude
  * @param longitude
  */
-case class Point(latitude: Double, longitude: Double){
+case class Point(latitude: Double, longitude: Double) {
   import funcs._
   def distanceTo(other: Point) = distanceHaversine(this, other)
 }
